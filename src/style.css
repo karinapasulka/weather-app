@@ -12,10 +12,24 @@
   font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
 }
 
+#mainCity {
+  text-align: center;
+}
+#mainTemp {
+  margin-top: 0px;
+  font-size: 50px;
+}
+.temperature-container {
+  margin-left: 225px;
+  display: block;
+  justify-content: center;
+  grid-template-columns: 60px 60px;
+  grid-gap: 3px;
+}
+
 .degreesC,
 .degreesF {
-  display: inline;
-  margin: 0 auto;
+  padding: 0px 0px;
   color: #5a6275;
   margin-bottom: 0px 0px;
   background: transparent;
@@ -44,17 +58,6 @@ input[type="text"] {
   background: transparent;
   border: none;
 }
-.locate-button {
-  display: block;
-  margin: 0 auto;
-  border-radius: 40px;
-  font-size: 13px;
-  margin-bottom: 5px;
-  padding: 12px 15px;
-  color: #5a6275;
-  background: transparent;
-  border: 1px solid #bec2cb;
-}
 
 #date {
   text-align: center;
@@ -78,9 +81,13 @@ h2 {
   margin-bottom: 0px 0px;
   background: transparent;
 }
-li {
+li,
+ul {
   list-style: none;
+  text-align: center;
+  padding-left: 0;
 }
+
 .weather-hours,
 .weather-degrees {
   font-size: 11px;
@@ -107,7 +114,4 @@ li {
   border-radius: 40px;
   padding: 8px 2px;
   margin: 5px 4px 5px 4px;
-}
-.mycode {
-  margin-left: 170px;
 }

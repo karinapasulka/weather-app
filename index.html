@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
-    <title>Search Engine</title>
+    <title>My Weather App</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <div class="container">
@@ -26,79 +26,21 @@
         /><input class="search" type="submit" , value="🔎" />
       </form>
       <br />
-      <button class="locate-button">Locate me</button>
       <h1 id="mainCity">Kyiv</h1>
       <div id="date">today date</div>
       <img src="images/image.png" alt="weather-img" class="weather-img" />
-      <h1 id="mainTemp">17</h1>
-      <button class="degreesC">°C</button><button class="degreesF">°F</button>
+      <div class="col-3">
+        <div class="temperature-container d-flex justify-content-center">
+          <div id="mainTemp">17</div>
+          <button class="degreesC">°C</button>
+          <button class="degreesF">°F</button>
+        </div>
+      </div>
       <h2 id="currentState">Cloudy</h2>
       <ul>
-        <li>Humidity: <span id="humidity"> </span>%</li>
-        <li>Wind: <span id="wind"> </span> km/h</li>
+        <li>Humidity: <span id="humidity"> </span> 20%</li>
+        <li>Wind: <span id="wind"> </span> 23 km/h</li>
       </ul>
-      <hr />
-      <div class="weather-hours">
-        <div class="row">
-          <div class="col-sm">
-            12 <br />
-            <img
-              src="images/rainy.png"
-              alt="rain"
-              width="34px"
-              class="weather-pics"
-            />
-          </div>
-          <div class="col-sm">
-            13 <br />
-            <img
-              src="images/sunny.png"
-              alt="sunny"
-              width="34px"
-              class="weather-pics"
-            />
-          </div>
-          <div class="col-sm">
-            14 <br /><img
-              src="images/rainy.png"
-              alt="rain"
-              class="weather-pics"
-            />
-          </div>
-          <div class="col-sm">
-            15 <br />
-            <img src="images/sunny.png" alt="sunny" class="weather-pics" />
-          </div>
-          <div class="col-sm">
-            16 <br />
-            <img
-              src="images/partially-cloudy.png"
-              alt="cloud"
-              class="weather-pics"
-            />
-          </div>
-          <div class="col-sm">
-            17 <br />
-            <img src="images/sunny.png" alt="sunny" class="weather-pics" />
-          </div>
-          <div class="col-sm">
-            18 <br />
-            <img src="images/rainy.png" alt="sunny" class="weather-pics" />
-          </div>
-        </div>
-      </div>
-
-      <div class="weather-degrees">
-        <div class="row">
-          <div class="col-sm">11°</div>
-          <div class="col-sm">15°</div>
-          <div class="col-sm">18°</div>
-          <div class="col-sm">9°</div>
-          <div class="col-sm">17°</div>
-          <div class="col-sm">15°</div>
-          <div class="col-sm">14°</div>
-        </div>
-      </div>
       <hr />
       <div class="weater-day2">
         <div class="row">
@@ -135,6 +77,11 @@
       </div>
       <script src="script/app.js"></script>
     </div>
-    <p class="mycode"><a href="">Open-source code</a> by Karina Pasulka</p>
+    <p class="mycode">
+      <a href="https://github.com/karinapasulka/weather-app" target="_blank"
+        >Open-source code</a
+      >
+      by Karina Pasulka
+    </p>
   </body>
 </html>

@@ -15,73 +15,75 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <div class="container">
-      <form class="city-form">
-        <input
-          type="text"
-          placeholder="Enter a city"
-          autocomplete="off"
-          autofocus="on"
-          id="search-city-input"
-        /><input class="search" type="submit" , value="🔎" />
-      </form>
-      <br />
-      <h1 id="mainCity">Kyiv</h1>
-      <div id="date">today date</div>
-      <img src="images/image.png" alt="weather-img" class="weather-img" />
-      <div class="col-3">
-        <div class="temperature-container d-flex justify-content-center">
-          <div id="mainTemp">17</div>
-          <button class="degreesC">°C</button>
-          <button class="degreesF">°F</button>
-        </div>
-      </div>
-      <h2 id="currentState">Cloudy</h2>
-      <ul>
-        <li>Humidity: <span id="humidity"> </span> 20%</li>
-        <li>Wind: <span id="wind"> </span> 23 km/h</li>
-      </ul>
-      <hr />
-      <div class="weater-day2">
-        <div class="row">
-          <div class="col-sm">Sat</div>
-          <div class="col-sm">Sun</div>
-          <div class="col-sm">Mon</div>
-          <div class="col-sm">Tue</div>
-          <div class="col-sm">Wed</div>
-        </div>
-      </div>
-      <div class="weather-img">
-        <div class="row">
-          <div class="col-sm weather-img1">
-            <img src="images/rainy.png" alt="rain" /> <br />
-            <div class="col-sm">12°</div>
-          </div>
-          <div class="col-sm weather-img2">
-            <img src="images/partially-cloudy.png" alt="cloudy" /> <br />
-            <div class="col-sm">17°</div>
-          </div>
-          <div class="col-sm weather-img3">
-            <img src="images/rainy.png" alt="rain" /> <br />
-            <div class="col-sm">14°</div>
-          </div>
-          <div class="col-sm weather-img4">
-            <img src="images/sunny.png" alt="sunny" /> <br />
-            <div class="col-sm">16°</div>
-          </div>
-          <div class="col-sm weather-img5">
-            <img src="images/rain.png" alt="rain" /> <br />
-            <div class="col-sm">14°</div>
+    <div class="container-wrapper">
+      <div class="container">
+        <form class="city-form">
+          <input
+            type="text"
+            placeholder="Enter a city"
+            autocomplete="off"
+            autofocus="on"
+            id="search-city-input"
+          /><input class="search" type="submit" , value="🔎" />
+        </form>
+        <br />
+        <h1 id="mainCity">Kyiv</h1>
+        <div id="date">today date</div>
+        <img src="images/image.png" alt="weather-img" class="weather-img" />
+        <div class="col-3">
+          <div class="temperature-container d-flex justify-content-center">
+            <div id="mainTemp">17</div>
+            <button class="degreesC">°C</button>
+            <button class="degreesF">°F</button>
           </div>
         </div>
+        <h2 id="currentState">Cloudy</h2>
+        <ul>
+          <li>Humidity: <span id="humidity"> </span> 20%</li>
+          <li>Wind: <span id="wind"> </span> 23 km/h</li>
+        </ul>
+        <hr />
+        <div class="weater-day2">
+          <div class="row">
+            <div class="col-sm">Sat</div>
+            <div class="col-sm">Sun</div>
+            <div class="col-sm">Mon</div>
+            <div class="col-sm">Tue</div>
+            <div class="col-sm">Wed</div>
+          </div>
+        </div>
+        <div class="weather-img">
+          <div class="row">
+            <div class="col-sm weather-img1">
+              <img src="images/rainy.png" alt="rain" /> <br />
+              <div class="col-sm">12°</div>
+            </div>
+            <div class="col-sm weather-img2">
+              <img src="images/partially-cloudy.png" alt="cloudy" /> <br />
+              <div class="col-sm">17°</div>
+            </div>
+            <div class="col-sm weather-img3">
+              <img src="images/rainy.png" alt="rain" /> <br />
+              <div class="col-sm">14°</div>
+            </div>
+            <div class="col-sm weather-img4">
+              <img src="images/sunny.png" alt="sunny" /> <br />
+              <div class="col-sm">16°</div>
+            </div>
+            <div class="col-sm weather-img5">
+              <img src="images/rain.png" alt="rain" /> <br />
+              <div class="col-sm">14°</div>
+            </div>
+          </div>
+        </div>
+        <script src="script/app.js"></script>
       </div>
-      <script src="script/app.js"></script>
+      <small class="mycode">
+        <a href="https://github.com/karinapasulka/weather-app" target="_blank"
+          >Open-source code</a
+        >
+        by Karina Pasulka
+      </small>
     </div>
-    <p class="mycode">
-      <a href="https://github.com/karinapasulka/weather-app" target="_blank"
-        >Open-source code</a
-      >
-      by Karina Pasulka
-    </p>
   </body>
 </html>

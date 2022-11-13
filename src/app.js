@@ -13,6 +13,7 @@ let hours = now.getHours();
 let minutes = now.getMinutes();
 let todayDate = document.querySelector("#date");
 todayDate.innerHTML = ` ${currentDay}, ${hours}:${minutes} `;
+console.log(todayDate);
 
 function searchLocation(position) {
   let apiKey = "c9e7c616f339faf20a83dcb2c84cda54";
@@ -56,6 +57,6 @@ locateButton.addEventListener("click", locateMe);
 //let input = document.querySelector("#search-city-input");
 //let inputResult = document.querySelector("h1");
 //inputResult.innerHTML = `${input.value}`;
-search("Kyiv");
-let form = document.querySelector(".city-form");
-form.addEventListener("submit", searchCity);
+//search("city");
+//let form = document.querySelector(".city-form");
+//form.addEventListener("submit", searchCity);

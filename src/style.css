@@ -1,9 +1,10 @@
 .container-wrapper {
   width: 80%;
-  max-width: 500px;
+  max-width: 600px;
   display: block;
   margin: 0 auto;
 }
+
 .container {
   color: #6b7283;
   display: block;
@@ -40,6 +41,7 @@
   background: transparent;
   border: none;
   font-size: 14px;
+  text-decoration: none;
 }
 input[type="text"] {
   display: block;
@@ -72,6 +74,7 @@ input[type="text"] {
 h1,
 h2 {
   text-align: center;
+  text-transform: capitalize;
 }
 .weather-img {
   display: block;
@@ -119,4 +122,16 @@ ul {
   border-radius: 40px;
   padding: 8px 2px;
   margin: 5px 4px 5px 4px;
+}
+.temperature-container .active {
+  color: #5a6275;
+  cursor: default;
+  text-decoration: none;
+}
+.temperature-container .active:hover {
+  cursor: default;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
 }

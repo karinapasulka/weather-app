@@ -76,6 +76,22 @@ h2 {
   text-align: center;
   text-transform: capitalize;
 }
+.weather-forecast {
+  margin-top: 10px;
+  text-align: center;
+  color: black;
+}
+.weather-forecast-day {
+  font-size: 16px;
+  opacity: 0.6;
+}
+.weather-forecast-temp {
+  font-size: 13px;
+}
+.weather-forecast-temp-min {
+  opacity: 0.5;
+}
+
 .weather-img {
   display: block;
   margin: 0 auto;
@@ -96,32 +112,10 @@ ul {
   padding-left: 0;
 }
 
-.weather-hours,
-.weather-degrees {
-  font-size: 11px;
-  text-align: center;
-}
 .weather-pics {
   width: 34px;
   padding: 20px 10px 20px 0px;
   margin-left: 6px;
-}
-.weater-day2,
-.weather-img {
-  font-size: 14px;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-.weather-img1,
-.weather-img2,
-.weather-img3,
-.weather-img4,
-.weather-img5 {
-  border: 1px solid #cecece;
-  border-radius: 40px;
-  padding: 8px 2px;
-  margin: 5px 4px 5px 4px;
 }
 .temperature-container .active {
   color: #5a6275;

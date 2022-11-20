@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Righteous&display=swap" rel="stylesheet">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -32,15 +35,14 @@
         <br />
         <h1 id="mainCity">Kyiv</h1>
         <div id="date">today date</div>
-        <img src="images/image.png" alt="weather-img" class="weather-img" id="icon"/>
-        <div class="col-3">
-          <div class="temperature-container d-flex justify-content-center">
-            <div id="mainTemp">17</div>
-            <button class="degreesC" ><a href="#" id="celsius-link", class="active">°C</a></button>
-            <button class="degreesF"> <a href="#" id="fahrenheit-link">°F</a> </button>
-          </div>
+               <h2 id="description">Cloudy</h2>
+ <img src="images/image.png" alt="weather-img" class="weather-img" id="icon"/>
+        <div class="row">
+       <div class="temperature-container" >
+            <span id="mainTemp">17</span>
+            <span class="degreesC" >°C</span>
         </div>
-        <h2 id="description">Cloudy</h2>
+        </div>
         <ul>
           <li>Humidity: <span id="humidity"> </span>%</li>
           <li>Wind: <span id="wind"> </span> km/h</li>
@@ -50,14 +52,14 @@
           <div class="row">
             <div class="col-2">
               <div class="weather-forecast-day">Mon</div> 
-              <img src="images/sunny.png" alt="sunny" width="42">
+              <img src="http://openweathermap.org/img/wn/04d@2x.png" alt="weather condition" width="60">
            <div class="weather-forecast-temp"> <span class="weather-forecast-temp-max"> 12°</span> 
            <span class="weather-forecast-temp-min"> 10°</span>  
             </div>
           </div>
         </div>
   </div> 
-        </div>
+        
       </div>
       <small class="mycode">
         <a href="https://github.com/karinapasulka/weather-app" target="_blank"
@@ -65,7 +67,7 @@
         >
         by Karina Pasulka
       </small>
-        <script src="src/app.js"></script>
     </div>
+        <script src="src/app.js"></script>
   </body>
 </html>

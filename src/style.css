@@ -15,7 +15,6 @@
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
   margin: 30px auto;
   margin-bottom: 5px;
-  font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
 }
 
 #mainCity {
@@ -24,31 +23,24 @@
 #mainTemp {
   margin-top: 0px;
   font-size: 50px;
+  line-height: normal;
 }
 .temperature-container {
-  margin-left: 225px;
   display: block;
-  justify-content: center;
-  grid-template-columns: 60px 60px;
-  grid-gap: 3px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.degreesC,
-.degreesF {
-  padding: 0px 0px;
-  color: #5a6275;
-  margin-bottom: 0px 0px;
-  background: transparent;
-  border: none;
-  font-size: 14px;
-  text-decoration: none;
+.degreesC {
+  position: relative;
+  font-size: 16px;
+  top: -21px;
 }
 input[type="text"] {
   display: block;
   margin: 0 auto;
-  width: 150px;
-  border-radius: 40px;
-  border-radius: 40px;
+  width: 200px;
+  border-radius: 10px;
   font-size: 18px;
   padding: 15px 25px;
   color: #5a6275;
@@ -76,8 +68,11 @@ h2 {
   text-align: center;
   text-transform: capitalize;
 }
+h2 {
+  font-size: 20px;
+}
 .weather-forecast {
-  margin-top: 10px;
+  margin-top: 20px;
   text-align: center;
   color: black;
 }
@@ -86,7 +81,7 @@ h2 {
   opacity: 0.6;
 }
 .weather-forecast-temp {
-  font-size: 13px;
+  font-size: 14px;
 }
 .weather-forecast-temp-min {
   opacity: 0.5;
@@ -120,12 +115,5 @@ ul {
 .temperature-container .active {
   color: #5a6275;
   cursor: default;
-  text-decoration: none;
-}
-.temperature-container .active:hover {
-  cursor: default;
-  text-decoration: none;
-}
-a {
   text-decoration: none;
 }

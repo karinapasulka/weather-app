@@ -25,7 +25,6 @@ function formatDate(timestapm) {
 function getForecast(coordinates) {
   let apiKey = "de2c40e370d58e257faf07ba4ea95840";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
-  console.log(apiUrl);
   axios.get(apiUrl).then(displayForecast);
 }
 
@@ -69,6 +68,7 @@ function formatDay(timestapm) {
   let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   return days[day];
 }
+search("Kyiv");
 
 function displayForecast(response) {
   let forecast = response.data.daily;
@@ -82,7 +82,7 @@ function displayForecast(response) {
 <div class="weather-forecast-day">${formatDay(forecastDay.dt)}</div> 
 <img src="http://openweathermap.org/img/wn/${
           forecastDay.weather[0].icon
-        }@2x.png" alt="sunny" width="46">
+        }@2x.png" alt="sunny" width="60">
 <div class="weather-forecast-temp"> <span class="weather-forecast-temp-max"> ${Math.round(
           forecastDay.temp.max
         )}°</span> 
@@ -124,5 +124,3 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
 
 let celsiusitLink = document.querySelector("#celsius-link");
 celsiusitLink.addEventListener("click", displayCelsiusTemp);
-
-search("Kyiv");

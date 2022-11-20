@@ -54,6 +54,29 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecatsHTML = `<div class="row">`;
+
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
+  days.forEach(function (day) {
+    forecatsHTML =
+      forecatsHTML +
+      `<div class="col-2">
+<div class="weather-forecast-day">${day}</div> 
+<img src="images/sunny.png" alt="sunny" width="42">
+<div class="weather-forecast-temp"> <span class="weather-forecast-temp-max"> 12°</span> 
+<span class="weather-forecast-temp-min"> 10°</span>  
+</div>
+</div>`;
+  });
+
+  forecatsHTML = forecatsHTML + `</div>`;
+  forecastElement.innerHTML = forecatsHTML;
+}
+
+displayForecast();
+
 function displayFahrenheitTemp(event) {
   event.preventDefault();
   let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
